@@ -1,0 +1,10 @@
+.username{
+	  			color: blue;
+	  			font-size: 2em;
+	  			cursor: pointer;
+	  		}
+.userdesc{
+	  			color: green;
+	  			font-size: 1em;
+	  			cursor: pointer;
+	  		}
