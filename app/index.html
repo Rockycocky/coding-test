@@ -1,0 +1,35 @@
+<!-- Functional Requirements:
+-Each item has an employee name and bio content.
+-By default, bio content is hidden.
+-By clicking on the employee name, it expands/collapses the items's bio content.
+-Only one item can be expanded at a time (expanding one will collapse the others)
+-Additionally by clicking on the content, an action occurs(can be an alert with item data). -->
+
+<html lang="en">
+	<head>
+		<title>For Coding Test</title>
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<link type="text/css" rel="stylesheet" href="../styles/style.css"/>
+	  	<script src="../scripts/angular.min.js"></script>
+
+	</head>
+	<body>
+		<div ng-app="myApp">
+		  <div id="todoapp" ng-controller="myCtrl">
+		    <div ng-repeat="x in users">
+		      <div class="username" ng-click="onClickName(x)">
+		      <!-- name of employee -->
+		        name: {{x.name}}                           
+		      </div>
+		      <div class="userdesc" ng-show="x.show" ng-click="onClickDesc(x)">
+		     <!--  bio content of employee -->
+		        desc: {{x.desc}}
+		      </div>
+		    </div>
+		          
+		  </div>
+		</div>
+
+       <script src="../scripts/myApp.js"></script>
+	</body>
+</html>
